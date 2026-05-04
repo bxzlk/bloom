@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloom — авторская кофейня со свежеобжаренным кофе и уютной атмосферой">
+  <title>Bloom — кофейня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== ШАПКА / НАВИГАЦИЯ ========== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Bloom</a>
+      <ul class="nav__list" id="navList">
+        <li><a href="#about"      class="nav__link">О нас</a></li>
+        <li><a href="#menu"       class="nav__link">Меню</a></li>
+        <li><a href="#atmosphere" class="nav__link">Атмосфера</a></li>
+        <li><a href="#contact"    class="nav__link">Контакты</a></li>
+      </ul>
+      <button class="nav__burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero__content container">
+        <span class="hero__label">Авторская кофейня · Москва</span>
+        <h1 class="hero__title">Там где начинается<br><em>твой день</em></h1>
+        <p class="hero__text">
+          Свежеобжаренный кофе, уютная атмосфера и команда,
+          которая знает твой заказ наизусть.
+        </p>
+        <div class="hero__buttons">
+          <a href="#menu"    class="btn btn--primary">Смотреть меню</a>
+          <a href="#contact" class="btn btn--outline">Забронировать столик</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== О НАС ========== -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+
+        <div class="about__image-wrap">
+          <img
+            src="assets/images/about.jpg"
+            alt="Бариста готовит кофе в кофейне Bloom"
+            class="about__image"
+            width="600"
+            height="750"
+          >
+        </div>
+
+        <div class="about__content">
+          <span class="section-label">О нас</span>
+          <h2 class="section-title">Мы варим кофе<br>с душой</h2>
+          <p>
+            Кофейня <strong>«Bloom»</strong> открылась в 2021 году. Мы сотрудничаем
+            с фермами из Эфиопии, Колумбии и Бразилии — и сами обжариваем зёрна
+            прямо на месте.
+          </p>
+          <p>
+            Каждая чашка — это <em>история</em>: от высоты над уровнем моря до точной
+            температуры обжарки. Мы не идём на компромисс с качеством.
+          </p>
+
+          <ul class="about__list">
+            <li>Свежая обжарка каждые 3 дня</li>
+            <li>Альтернативные способы заваривания</li>
+            <li>Прямые поставки с ферм — без посредников</li>
+            <li>Бариста с международными сертификатами</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== МЕНЮ ========== -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <span class="section-label">Меню</span>
+        <h2 class="section-title">Наши напитки</h2>
+
+        <div class="menu__grid">
+
+          <article class="menu-card">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/espresso.jpg" alt="Эспрессо — крепкий концентрированный кофе" class="menu-card__img">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Эспрессо</h3>
+              <p class="menu-card__desc">Концентрированный, насыщенный, с плотной крема. Основа всего.</p>
+              <span class="menu-card__price">180 ₽</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/cappuccino.jpg" alt="Капучино с бархатистой молочной пенкой" class="menu-card__img">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Капучино</h3>
+              <p class="menu-card__desc">Бархатистое молоко, ароматный эспрессо и нежная пенка.</p>
+              <span class="menu-card__price">250 ₽</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/latte.jpg" alt="Латте — кофе с большим количеством молока" class="menu-card__img">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Латте</h3>
+              <p class="menu-card__desc">Мягкий кофейный вкус с большим количеством молока.</p>
+              <span class="menu-card__price">270 ₽</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/flatwhite.jpg" alt="Флэт Уайт — двойной рестретто с шёлковым молоком" class="menu-card__img">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Флэт Уайт</h3>
+              <p class="menu-card__desc">Двойной рестретто и шёлковое молоко — идеальный баланс.</p>
+              <span class="menu-card__price">290 ₽</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/pourover.jpg" alt="Пуровер — ручная фильтрация кофе" class="menu-card__img">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Пуровер</h3>
+              <p class="menu-card__desc">Ручная фильтрация, раскрывающая все ноты зерна.</p>
+              <span class="menu-card__price">320 ₽</span>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <div class="menu-card__img-wrap">
+              <img src="assets/images/coldbrew.jpg" alt="Колд Брю — холодное заваривание 12 часов" class="menu-card__img">
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Колд Брю</h3>
+              <p class="menu-card__desc">12 часов холодного заваривания для мягкого вкуса без кислинки.</p>
+              <span class="menu-card__price">350 ₽</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ПРЕИМУЩЕСТВА ========== -->
+    <section class="features">
+      <div class="container">
+        <span class="section-label">Почему мы</span>
+        <h2 class="section-title">Что делает нас особенными</h2>
+        <div class="features__row">
+
+          <div class="feature-item">
+            <div class="feature-item__icon">☕</div>
+            <h3>Собственная обжарка</h3>
+            <p>Мы обжариваем зёрна сами, контролируя каждый этап процесса.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">🌍</div>
+            <h3>Этичные поставки</h3>
+            <p>Прямая торговля с фермами: справедливая цена для фермеров.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">🏆</div>
+            <h3>Опытные бариста</h3>
+            <p>Наши бариста обучены в лучших школах кофе страны.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon">🏡</div>
+            <h3>Уютное пространство</h3>
+            <p>Место для работы, встреч или просто тихого утра.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== АТМОСФЕРА / ГАЛЕРЕЯ ========== -->
+    <section class="atmosphere" id="atmosphere">
+      <div class="container">
+        <span class="section-label">Атмосфера</span>
+        <h2 class="section-title">Почувствуй себя дома</h2>
+        <div class="gallery">
+          <div class="gallery__item gallery__item--large">
+            <img src="assets/images/gallery1.jpg" alt="Уютный интерьер кофейни Bloom — тёплый свет и деревянные столы">
+          </div>
+          <div class="gallery__item">
+            <img src="assets/images/gallery2.jpg" alt="Латте арт — рисунок на поверхности кофе">
+          </div>
+          <div class="gallery__item">
+            <img src="assets/images/gallery3.jpg" alt="Кофейные зёрна крупным планом перед обжаркой">
+          </div>
+          <div class="gallery__item">
+            <img src="assets/images/gallery4.jpg" alt="Гости кофейни работают за ноутбуком">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== КОНТАКТЫ / ФОРМА ========== -->
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+
+        <div class="contact__info">
+          <span class="section-label">Контакты</span>
+          <h2 class="section-title">Приходи к нам</h2>
+
+          <ul class="contact__list">
+            <li><strong>Адрес</strong>адрес</li>
+            <li><strong>Телефон</strong>Телефон</li>
+            <li><strong>Email</strong>Email</li>
+            <li>
+              <strong>Часы работы</strong>
+              Пн–Пт: 8:00–21:00<br>Сб–Вс: 9:00–22:00
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact__form-wrap">
+          <h3>Забронировать столик</h3>
+          <form class="form" action="#" method="post" novalidate>
+
+            <div class="form__group">
+              <label for="name" class="form__label">Ваше имя</label>
+              <input type="text" id="name" name="name" class="form__input" placeholder="Иван Петров" required minlength="2">
+            </div>
+
+            <div class="form__group">
+              <label for="phone" class="form__label">Телефон</label>
+              <input type="tel" id="phone" name="phone" class="form__input" placeholder="+7 (___) ___-__-__" required>
+            </div>
+
+            <div class="form__group">
+              <label for="date" class="form__label">Дата и время</label>
+              <input type="datetime-local" id="date" name="date" class="form__input" required>
+            </div>
+
+            <div class="form__group">
+              <label for="guests" class="form__label">Количество гостей</label>
+              <input type="number" id="guests" name="guests" class="form__input" placeholder="2" min="1" max="20">
+            </div>
+
+            <div class="form__group">
+              <label for="message" class="form__label">Пожелания</label>
+              <textarea id="message" name="message" class="form__textarea" placeholder="Например: столик у окна, детское меню..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== ПОДВАЛ ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="nav__logo footer__logo">Bloom</a>
+      <p class="footer__copy">© 2026 Bloom.</p>
+      <nav class="footer__nav" aria-label="Навигация в подвале">
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#atmosphere">Атмосфера</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    const burger  = document.getElementById('burger');
+    const navList = document.getElementById('navList');
+
+    burger.addEventListener('click', () => {
+      const isOpen = navList.classList.toggle('nav__list--open');
+      burger.setAttribute('aria-expanded', isOpen);
+      burger.classList.toggle('nav__burger--open', isOpen);
+    });
+
+    // Закрываем меню при клике на любую ссылку
+    navList.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navList.classList.remove('nav__list--open');
+        burger.classList.remove('nav__burger--open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+</body>
+</html>
